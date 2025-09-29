@@ -261,13 +261,13 @@ class LoginForm1 {
 		try {
 			let url, payload;
 			if (this.form.id === 'loginForm') {
-				url = 'http://localhost:4000/api/login';
+				url = 'https://auth-form-e63e.onrender.com/api/login';
 				payload = {
 					email: document.getElementById(this.emailId).value,
 					password: document.getElementById(this.passwordInput.id).value
 				};
 			} else if (this.form.id === 'signupForm') {
-				url = 'http://localhost:4000/api/signup';
+				url = 'https://auth-form-e63e.onrender.com/api/signup';
 				payload = {
 					name: document.getElementById('fullName').value,
 					email: document.getElementById(this.emailId).value,
